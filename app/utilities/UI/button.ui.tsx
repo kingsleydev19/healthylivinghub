@@ -18,7 +18,7 @@ const Button: React.FC<ButtonProps> = ({
   newTab,
 }) => {
   const handleClick = () => {
-    fbEvent("Lead", {
+    fbEvent("Purchase", {
       value: pixelValue,
       currency: "USD",
       source: pixelSource,
