@@ -47,7 +47,7 @@ export default function RootLayout({
             })(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
             fbq('init', '${FB_PIXEL_ID}');
-            fbq('track', 'PageView');
+            fbq('track', 'Purchase');
           `}
         </Script>
 
