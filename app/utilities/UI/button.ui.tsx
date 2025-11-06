@@ -18,15 +18,17 @@ const Button: React.FC<ButtonProps> = ({
   newTab,
 }) => {
   const handleClick = () => {
-    fbEvent("Purchase", {
+    fbEvent("Lead", {
       value: pixelValue,
       currency: "USD",
       source: pixelSource,
     });
-    if (href) {
-      if (newTab) window.open(href, "_blank");
-      else window.location.href = href;
-    }
+    setTimeout(() => {
+      if (href) {
+        if (newTab) window.open(href, "_blank");
+        else window.location.href = href;
+      }
+    }, 300);
   };
 
   return (
